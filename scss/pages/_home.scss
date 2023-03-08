@@ -1,0 +1,113 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .teasers {
+    display: flex;
+    // align-items: center;
+    justify-content: space-evenly;
+    // flex-wrap: wrap;
+    gap: $spacing;
+
+    border-radius: $border-radius;
+    padding: $spacing;
+    margin: 0 1rem $spacing 1rem;
+
+    box-shadow: $shadow;
+
+    //NOTE: text inside card is not selectable.
+    //This is acceptable since minimal amount of text
+    //https://intopia.digital/articles/card-designs-and-selectable-text/
+
+    // figure has its bits that can be layered
+    // since using figure, just set background of caption rather than a whole separate overlay layer
+    //use absolute positioning & z-indexes on each layer
+
+    .teaser {
+      position: relative;
+      z-index: 1;
+      //maybe should be a max-width
+      max-width: 500px;
+      max-height: 300px;
+      border-radius: $border-radius;
+      width: 100%;
+      overflow: hidden;
+
+      & * {
+        transition: all 0.3s ease-out;
+      }
+
+      img {
+        border-radius: inherit;
+      }
+
+      figcaption {
+        border-radius: inherit;
+        background: rgba(0, 0, 0, 0)
+          linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0) 0px,
+            rgba(0, 0, 0, 0.6) 100%
+          )
+          repeat 0 0;
+
+        display: flex;
+        flex: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+        padding: 1rem;
+
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 2;
+
+        & * {
+          transition: all 0.3s ease-out;
+        }
+
+        &:hover,
+        &:focus-within {
+          border: 3px $brand-primary solid;
+          background-color: $brand-primary-shadow;
+        }
+
+        a {
+          text-decoration-color: $brand-light;
+          color: $brand-primary;
+          text-decoration-thickness: 2px;
+          text-underline-offset: 0.5rem;
+          font-size: 1.25rem;
+          font-weight: 700;
+          z-index: 3;
+
+          &::after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            content: " ";
+          }
+        }
+      }
+    }
+  }
+
+  p {
+    padding: $spacing;
+    margin: 0 1rem $spacing 1rem;
+    border-radius: $border-radius;
+    box-shadow: $shadow;
+  }
+}
+
+@media only screen and (max-width: $breakpoint-lg) {
+  .teasers {
+    flex-wrap: wrap;
+  }
+}

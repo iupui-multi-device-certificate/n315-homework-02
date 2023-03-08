@@ -1,0 +1,44 @@
+/* 
+  Your browse page will display a photo gallery with a description to the right of the image. The images must be at least 200 x 200 and the description must be 150 x 200. You must have at least 10 images with descriptions and they must line up in a grid pattern and be spaced equally. 
+*/
+
+.gallery {
+  width: 100%;
+
+  .cards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    gap: $spacing;
+
+    .card {
+      margin: 0 1rem $spacing 1rem;
+      border-radius: $border-radius;
+      background-color: white;
+      display: flex;
+      // gap: $spacing;
+
+      img {
+        border-radius: $border-radius;
+      }
+      .card-title {
+        text-align: center;
+        color: $brand-primary;
+        font-size: 1.5rem;
+      }
+
+      .card-body {
+        padding: $spacing;
+        display: flex;
+        flex-direction: column;
+        a {
+          text-decoration-color: $brand-dark;
+          color: $brand-primary;
+          font-size: 1.25rem;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}

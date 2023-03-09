@@ -18,14 +18,14 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: #cccccc;
+  background-color: #3eb489;
 
   //set font same as Bootstrap, Tailwind, etc.
 }
 .content {
   margin: 0 auto $spacing auto;
   width: 80%;
-  background-color: white;
+  // background-color: white;
   border-radius: 0.375rem;
   padding: 0.75rem;
 }

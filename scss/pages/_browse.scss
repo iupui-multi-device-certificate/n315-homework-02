@@ -13,30 +13,34 @@
     gap: $spacing;
 
     .card {
-      margin: 0 1rem $spacing 1rem;
+      margin-bottom: 1rem;
       border-radius: $border-radius;
       background-color: white;
       display: flex;
-      // gap: $spacing;
+      gap: $spacing;
+      font-size: 0.65rem;
 
       img {
         border-radius: $border-radius;
-      }
-      .card-title {
-        text-align: center;
-        color: $brand-primary;
-        font-size: 1.5rem;
+        height: 200px;
+        width: 200px;
       }
 
       .card-body {
+        width: 150px;
+        height: 200px;
+        border-radius: $border-radius;
         padding: $spacing;
         display: flex;
         flex-direction: column;
-        a {
-          text-decoration-color: $brand-dark;
+        justify-content: center;
+        align-items: center;
+
+        overflow: hidden;
+
+        .card-title {
           color: $brand-primary;
-          font-size: 1.25rem;
-          font-weight: 700;
+          // font-size: 1rem;
         }
       }
     }

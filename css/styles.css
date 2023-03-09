@@ -42,7 +42,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: #3eb489;
+  background-color: #fa8072;
 }
 
 .content {
@@ -51,7 +51,7 @@ body {
 }
 
 .btn, .btn--round {
-  background-color: #0fff50;
+  background-color: #3eb489;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -111,7 +111,7 @@ body {
   font-size: 2rem;
 }
 .navbar .logo .fa-solid {
-  color: pink;
+  color: #3eb489;
 }
 .navbar .nav-links {
   display: flex;
@@ -191,5 +191,5 @@ footer {
   overflow: hidden;
 }
 .gallery .cards .card .card-body .card-title {
-  color: #0fff50;
+  color: #3eb489;
 }

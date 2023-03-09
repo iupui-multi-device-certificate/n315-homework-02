@@ -18,7 +18,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: #3eb489;
+  background-color: $brand-secondary;
 
   //set font same as Bootstrap, Tailwind, etc.
 }

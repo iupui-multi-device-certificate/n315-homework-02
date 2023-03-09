@@ -92,7 +92,7 @@ export const quotes = [
       
       What does it mean that success is a dangerous as failure?
       Whether you go up the ladder or down it,
-      you position is shaky.
+      your position is shaky.
       When you stand with your two feet on the ground,
       you will always keep your balance.`,
     author: "Lao Tzu",

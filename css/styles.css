@@ -127,8 +127,12 @@ body {
 }
 
 .navbar {
-  position: fixed;
   margin: 10px;
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
 }
 
 .bars {

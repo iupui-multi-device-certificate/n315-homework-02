@@ -1,5 +1,7 @@
 .hero {
-  background-image: url("images/hero.jpg");
+  //this should work for both server & localhost
+  //https://stackoverflow.com/questions/2853308/how-to-make-css-url-background-images-show-up-in-localhost
+  background-image: url("../images/hero.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

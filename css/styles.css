@@ -20,8 +20,10 @@ textarea {
 }
 
 .section-title {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 1.5rem;
+  font-style: italic;
+  font-weight: normal;
 }
 
 h1,
@@ -47,7 +49,7 @@ body {
 
 .content {
   margin: 0 auto 0.5rem auto;
-  width: 80%;
+  width: 85%;
 }
 
 .hero {
@@ -137,6 +139,7 @@ body {
 }
 .navbar .logo {
   font-size: 2rem;
+  font-weight: bold;
 }
 .navbar .logo .fa-solid {
   color: #3eb489;
@@ -166,7 +169,7 @@ footer {
   Your browse page will display a photo gallery with a description to the right of the image. The images must be at least 200 x 200 and the description must be 150 x 200. You must have at least 10 images with descriptions and they must line up in a grid pattern and be spaced equally. 
 */
 .gallery {
-  width: 100%;
+  padding: 0 5rem;
 }
 .gallery .cards {
   display: flex;

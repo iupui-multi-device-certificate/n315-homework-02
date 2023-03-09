@@ -59,7 +59,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
+  min-height: 100%;
   width: 100%;
   position: absolute;
   left: 0;
@@ -235,6 +235,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1030;
 }
 
 /* 

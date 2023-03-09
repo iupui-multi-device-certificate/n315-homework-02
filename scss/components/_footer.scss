@@ -7,4 +7,9 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  //fix so footer visible on hero home page
+  //https://stackoverflow.com/questions/63252815/make-footer-under-cover-sized-image
+  // It sounds like you only need to add a z-index to your divs.
+  z-index: 1030;
 }

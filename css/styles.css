@@ -171,10 +171,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.nav-item {
-  margin-left: 5rem;
+  gap: 2rem;
 }
 
 .nav-link {
@@ -199,17 +196,16 @@ a {
     left: -100%;
     top: 0;
     flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
     background-color: #3eb489;
     height: 100vh;
     width: 100%;
-    transition: height 0s opacity 0.4s;
+    transition: 0.3s;
     background-color: #3eb489;
   }
   .nav-menu.active {
     left: 0;
-  }
-  .nav-item {
-    margin: 2.5rem 0;
   }
   .hamburger {
     display: block;

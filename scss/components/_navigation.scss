@@ -1,37 +1,28 @@
 .navbar {
+  padding: $spacing-xl;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 
-  margin-bottom: $spacing;
-  padding-top: $spacing-lg;
-  padding-bottom: $spacing-lg;
+  font-size: 1.25rem;
+  font-style: italic;
 
-  font-size: 1.5rem;
-
-  background-color: black;
-
-  a {
-    color: $brand-light;
-    text-decoration-color: $brand-primary;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 0.5rem;
-    &:hover {
-      color: $brand-primary;
-      text-decoration-color: $brand-light;
+  color: $brand-dark;
+  .logo {
+    font-size: 2rem;
+    .fa-solid {
+      color: pink;
     }
   }
 
-  .logo-link {
-    color: $brand-primary;
-
-    text-decoration-color: $brand-light;
-    i {
-      margin-right: 0.5rem;
-    }
-    &:hover {
-      color: $brand-light;
-      text-decoration-color: $brand-primary;
+  .nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: $spacing-xl;
+    a {
+      color: $brand-dark;
+      text-decoration: none;
     }
   }
 }

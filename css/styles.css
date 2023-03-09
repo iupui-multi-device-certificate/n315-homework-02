@@ -67,14 +67,17 @@ body {
   justify-content: center;
 }
 .hero .hero-cta {
-  color: #fff;
+  text-align: center;
 }
 .hero .hero-cta h1 {
+  color: #fff;
   font-size: 3rem;
+  margin-bottom: 2rem;
 }
 .hero .hero-cta p {
   font-size: 1.5rem;
   font-style: italic;
+  color: #fa8072;
 }
 
 .btn, .btn--round {

@@ -12,15 +12,17 @@
   align-items: center;
   justify-content: center;
   .hero-cta {
-    color: $brand-light;
-
+    text-align: center;
     h1 {
+      color: $brand-light;
       font-size: 3rem;
+      margin-bottom: $spacing-xl;
     }
 
     p {
       font-size: 1.5rem;
       font-style: italic;
+      color: $brand-secondary;
     }
   }
 }

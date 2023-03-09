@@ -5,7 +5,7 @@ import { homeView, browseView } from "./views/view.js";
 const titleBase = "Quotes";
 
 const routes = {
-  // home: homeView(),
+  home: homeView(),
   browse: browseView(quotes),
 };
 

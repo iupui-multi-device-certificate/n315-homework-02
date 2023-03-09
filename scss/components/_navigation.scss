@@ -6,8 +6,20 @@ a {
   text-decoration: none;
 }
 
+.fa-seedling {
+  color: $brand-secondary;
+}
+
 .header {
   border-bottom: 2px solid $brand-primary;
+
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+
+  margin-bottom: $spacing-xl;
 }
 
 .navbar {
@@ -28,7 +40,7 @@ a {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: $brand-dark;
+  background-color: $brand-secondary;
 }
 
 .nav-menu {
@@ -61,15 +73,15 @@ a {
   .nav-menu {
     position: fixed;
     left: -100%;
-    top: 5rem;
+    top: 0;
     flex-direction: column;
-    //need to tweak colors again
+
     background-color: $brand-primary;
+    height: 100vh;
     width: 100%;
-    border-radius: 10px;
-    text-align: center;
+
     transition: 0.3s;
-    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    background-color: $brand-primary;
   }
 
   .nav-menu.active {

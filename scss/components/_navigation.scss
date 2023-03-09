@@ -1,65 +1,99 @@
-//non-nesting, close to vanilla CSS
-
-.navbar {
-  position: fixed;
-  margin: 10px;
+li {
+  list-style: none;
 }
 
-.bars {
+a {
+  text-decoration: none;
+}
+
+.header {
+  border-bottom: 2px solid $brand-primary;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+.hamburger {
   display: none;
 }
 
-.bars .bar {
+.bar {
   display: block;
   width: 25px;
-  margin: 5px 0;
-  background-color: $brand-dark;
   height: 3px;
-  border-radius: 5px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  background-color: $brand-dark;
 }
 
-.bars.active .bar:nth-child(2) {
-  opacity: 0;
-}
-
-.bars.active .bar:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
-}
-
-.bars.active .bar:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
-}
-
-.nav-links {
+.nav-menu {
   display: flex;
-
-  background-color: $brand-primary;
-  height: 50px;
-  width: 100vw;
-
-  overflow: hidden;
-  margin-left: -10px;
-
+  justify-content: space-between;
   align-items: center;
-  justify-content: space-evenly;
-
-  transition: height 0.4s, opacity 0.2s ease-in;
 }
 
-.nav-links.active {
-  height: 100vh;
-  opacity: 1;
+.nav-item {
+  margin-left: 5rem;
+}
+
+.nav-link {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: $brand-secondary;
+}
+
+.nav-link:hover {
+  color: $brand-primary;
+}
+
+.nav-logo {
+  font-size: 2.1rem;
+  font-weight: 500;
+  color: $brand-primary;
 }
 
 @media only screen and (max-width: $breakpoint-nav) {
-  .bars {
-    display: block;
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    //need to tweak colors again
+    background-color: $brand-primary;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
   }
 
-  .nav-links {
-    height: 0;
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 2.5rem 0;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
     opacity: 0;
-    flex-direction: column;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
   }
 }

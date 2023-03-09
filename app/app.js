@@ -21,18 +21,22 @@ const changeRoute = () => {
   $(document).attr("title", `${titleBase} | ${pageID.toUpperCase()}`);
 };
 
+const toggleMobileMenu = () => {
+  $(".hamburger").toggleClass("active");
+  $(".nav-menu").toggleClass("active");
+};
+
 function initListeners() {
   $(window).on("hashchange", changeRoute);
   changeRoute();
 
-  $(".bars").click((e) => {
-    $(".bars").toggleClass("active");
-    $(".nav-links").toggleClass("active");
+  $(".hamburger").click(function (e) {
+    toggleMobileMenu();
   });
 
-  $(".nav-links a").click((e) => {
-    $(".bars").toggleClass("active");
-    $(".nav-links").toggleClass("active");
+  //close when click a nav link
+  $(".nav-link").click(function (e) {
+    toggleMobileMenu();
   });
 }
 $(document).ready(function () {

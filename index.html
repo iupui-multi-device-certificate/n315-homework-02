@@ -16,23 +16,35 @@
   </head>
   <body class="container">
     <!-- leave links underlined to stick with semantic principles -->
-    <nav class="navbar">
-      <div class="bars">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
 
-      <div class="logo">
-        Quote Garden <i class="fa-solid fa-fw fa-seedling"></i>
-      </div>
-      <div class="nav-links">
-        <a href="#home">Home</a>
-        <a href="#browse">Browse</a>
-        <a href="#">Curate Quote</a>
-        <a href="#">Log in</a>
-      </div>
-    </nav>
+    <!-- https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci -->
+    <header class="header">
+      <nav class="navbar">
+        <a href="#" class="nav-logo"
+          >Quote Garden <i class="fa-solid fa-fw fa-seedling"></i
+        ></a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#home" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#browse" class="nav-link">Browse</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Curate Quote</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Log in</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+
     <main>
       <div id="app"></div>
     </main>

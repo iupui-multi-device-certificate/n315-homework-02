@@ -5,7 +5,7 @@ import { homeView, browseView } from "./views/view.js";
 const titleBase = "Quotes";
 
 const routes = {
-  home: homeView(),
+  // home: homeView(),
   browse: browseView(quotes),
 };
 
@@ -24,6 +24,16 @@ const changeRoute = () => {
 function initListeners() {
   $(window).on("hashchange", changeRoute);
   changeRoute();
+
+  $(".bars").click((e) => {
+    $(".bars").toggleClass("active");
+    $(".nav-links").toggleClass("active");
+  });
+
+  $(".nav-links a").click((e) => {
+    $(".bars").toggleClass("active");
+    $(".nav-links").toggleClass("active");
+  });
 }
 $(document).ready(function () {
   initListeners();

@@ -28,3 +28,8 @@ $breakpoint-md: 768px;
 $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
 $breakpoint-xxl: 1400px;
+
+/* 
+When the browser is smaller than 960px your menu must change from a full menu to a mobile or hamburger menu. When you click on that hamburger it will open to show all the links
+*/
+$breakpoint-nav: 960px;

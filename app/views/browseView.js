@@ -15,7 +15,7 @@ const renderQuotes = (quotes) => `
 export const browseView = (quotes) => `
 
         <section class="gallery">
-          <h1 class="section-title">Gallery</h1>
+          <h1 class="section-title">Seedlings</h1>
           <div class="cards">
             ${renderQuotes(quotes)}
           </div>

@@ -1,0 +1,26 @@
+.hero {
+  background-image: url(../../images/hero.jpg);
+  height: 500px;
+  width: 100%;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .hero-cta {
+    color: $brand-light;
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+      font-style: italic;
+    }
+  }
+}
